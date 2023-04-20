@@ -1,5 +1,5 @@
 resource "google_bigquery_dataset" "dataset" {
-  dataset_id                  = "dhruv-dataset-github"
+  dataset_id                  = "dhruv_dataset_github"
   friendly_name               = "test"
   description                 = "This is a dataset from Terraform script"
   location                    = "US"
