@@ -2,7 +2,7 @@ resource "google_bigquery_dataset" "dataset" {
   dataset_id                  = "dhruv-dataset-github"
   friendly_name               = "test"
   description                 = "This is a dataset from Terraform script"
-  location                    = "US
+  location                    = "US"
   default_table_expiration_ms = 3600000
 
   labels = {
