@@ -1,5 +1,5 @@
 resource "google_bigquery_dataset" "dataset" {
-  dataset_id                  = "dhruv_dataset_github"
+  dataset_id                  = "my_dataset"
   friendly_name               = "test"
   description                 = "This is a dataset from Terraform script"
   location                    = "US"
@@ -12,7 +12,7 @@ resource "google_bigquery_dataset" "dataset" {
 
 resource "google_bigquery_table" "default" {
   dataset_id = google_bigquery_dataset.dataset.dataset_id
-  table_id   = "dhruv-table-github"
+  table_id   = "my-table"
 
   time_partitioning {
     type = "DAY"
